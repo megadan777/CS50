@@ -1,8 +1,8 @@
-# Ask user for their name
-name = input ("What's your name? ")
+# Ask user for their name and Remove whitespace from str and capitlise user name
+name = input ("What's your name? ").strip().title()
 
-#Remove whitespace from str and capitlise user name
-name = name.strip().title()
+#Split name into first and last
+first, last  name.split(" ")
 
 #Format Strings
-print(f"hello, {name}")
+print(f"hello, {first}")
