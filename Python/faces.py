@@ -1,12 +1,9 @@
 # Creating an input from the user
-def(main):
-message = inputstr(("Enter some text: "))
+message = input("Enter some text: ")
 
 
-# replacing each space with ... (i.e., three periods).
-message = message.replace(' ', '...')
+# convert emoticons to emoji automatically
+message = message.replace(":)", "🙂").replace(":(","🙁")
 
-print(f"{message}")
+print(message)
 
-
-main()
