@@ -1,8 +1,11 @@
-# Creating an input from the user
-integer = input("Enter mass to output joules: ")
+#asking for the mass in grams
+mass = float(input("Enter the mass of object(in grams): "))
 
+#Speed of light is known and given in the question
+c = 3 * 10 ** 8
 
-# convert emoticons to emoji automatically
-message = message.replace(":)", "🙂").replace(":(","🙁")
+#calculating the energy, mass is divided by 1000 to convert it into kilogram
+Energy = (mass/1000) * c ** 2 
 
-print(message)
+#printing the output
+print(round(Energy, None))
