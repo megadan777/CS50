@@ -1,17 +1,16 @@
 ext = input("What is the name of your file? ").strip().lower()
 
+
 match ext:
-    case ext.endswith(".gif"):
+    case _ if ext.endswith(".gif"):
         print("image/gif")
-    case ext.endswith(".jpg"):
-        print("image/jpg")
-    case ext.endswith(".jpeg"):
+    case _ if ext.endswith((".jpg", ".jpeg")):
         print("image/jpeg")
-    case ext.endswith(".png"):
+    case _ if ext.endswith(".png"):
         print("image/png")
-    case ext.endswith(".pdf"):
+    case _ if ext.endswith(".pdf"):
         print("application/pdf")
-    case ext.endswith(".txt"):
+    case _ if ext.endswith(".txt"):
         print("text/plain")
     case _:
         print("application/octet-stream")
