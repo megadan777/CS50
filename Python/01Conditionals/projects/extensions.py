@@ -8,6 +8,8 @@ match ext:
         print("image/jpeg")
     case _ if ext.endswith(".png"):
         print("image/png")
+    case _ if ext.endswith(".zip"):
+        print("application/zip")    
     case _ if ext.endswith(".pdf"):
         print("application/pdf")
     case _ if ext.endswith(".txt"):
