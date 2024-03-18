@@ -5,6 +5,6 @@ vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
 
 
 
-
-for c in s:
-    print(c, end="")
+#Replace vowels when printed
+for vowels in input:
+    print(input.replace('vowels', ''))
